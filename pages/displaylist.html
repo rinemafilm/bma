@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현재 전시</title>
+    <script src="../js/code.jquery.com_jquery-1.12.4.js"></script>
+    <script src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/displaylist.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+</head>
+<body>
+    <header>
+        <div class="head"></div>
+    </header>
+
+    <div class="wrap">
+        <div class="traMenu">
+            <div class="home"><img src="../images/ic_home.png"></div>
+            <img src="../images/angle_arrow_right.png">
+            <div class="bigMenu">
+                <ul>
+                    <li>전시</li>
+                    <img src="../images/arrow_down.png" alt="">
+                </ul>
+            </div>
+            <img src="../images/angle_arrow_right.png">
+            <div class="subMenu">
+                <ul>
+                    <li>현재전시</li>
+                    <img src="../images/arrow_down.png" alt="">
+                </ul>
+            </div>
+        </div>
+        <div class="list">
+            <div class="listText">
+                <h2>현재전시</h2>
+            </div>
+            <ul class="now">
+                <li><a href="./display.html"><img src="../images/now_01.png">
+                    <h4>슬픈 나의 젊은 날</h4>
+                    <p>2023-03-10 - 2023-08-06</p>
+                </a></li>
+                <li><a href="./display.html"><img src="../images/now_03.png">
+                    <h4>많은 사람들</h4>
+                    <p>2023-05-04 - 2023-12-17</p>
+                </a></li>
+                <li><a href="./display.html"><img src="../images/now_02.png">
+                    <h4>야외조각공원 상설전시</h4>
+                    <p>2023-03-31 - 2023-12-31</p>
+                </a></li>
+                <li><a href="./display.html"><img src="../images/now_04.png">
+                    <h4>이우환 공간 상설전시</h4>
+                    <p>2023-05-04 -2099-12-31</p>
+                </a></li>
+                <li><a href="./display.html"><img src="../images/now_05.png">
+                    <h4>소장품 기획전 영점</h4>
+                    <p>2023-06-16 - 2023-08-27</p>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer"></div>
+    </footer>
+
+    <script>
+        $(window).scroll(function () {
+            // console.log($(this).scrollTop());
+            if ($(this).scrollTop() > 50) {
+                $('.header').addClass('scroll')
+            } else {
+                $('.header').removeClass('scroll')
+            }
+        })        
+    </script>
+</body>
+</html>
