@@ -45,3 +45,69 @@
         <div class="space"><img src="../images/logo_left.png" alt=""></div>
     </div>
 </div>
+
+<div class="menuPop">
+    <div class="MenuHeader">
+        <div class="logo"><a href="./main.html"><img src="../images/logo_1.png" alt=""></a></div>
+        <div class="icon">
+            <div class="close"><img src="../images/close.png" alt=""></div>
+        </div>
+    </div>
+    <div class="menuList">
+        <ul class="ListGnb">
+            <li><a href="../pages/displaylist.html">관람</a>
+                <ul class="gnbSub">
+                    <li><a href="#">관람안내</a></li>
+                    <li><a href="#">이달의 BMA</a></li>
+                    <li><a href="#">관람예약</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/displaylist.html">전시</a>
+                <ul class="gnbSub">
+                    <li><a href="#">현재전시</a></li>
+                    <li><a href="#">예정전시</a></li>
+                    <li><a href="#">과거전시</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/displaylist.html">교육/행사</a>
+                <ul class="gnbSub">
+                    <li><a href="#">프로그램</a></li>
+                    <li><a href="#">문화행사</a></li>
+                    <li><a href="#">교육 및 행사사진</a></li>
+                    <li><a href="#">자료실</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/displaylist.html">수집/연구/출판 </a>
+                <ul class="gnbSub">
+                    <li><a href="#">소장품 검색</a></li>
+                    <li><a href="#">소장품 고화질 보기</a></li>
+                    <li><a href="#">도서와 아카이브</a></li>
+                    <li><a href="#">BMA컬렉션</a></li>
+                    <li><a href="#">출판물</a></li>
+                    <li><a href="#">소식지</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/displaylist.html">온택트</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    $('.menubar').click(function(){
+        $('.header, .content, .wrap').hide()
+        $('.menuPop').show()
+    })
+
+    $('.close').click(function(){
+        $('.menuPop').hide()
+        $('.header, .content, .wrap').show()
+    })
+
+    $('.gnb > li').mouseenter(function(){
+        $(this).find('.gnb_sub').stop().show()
+    })
+    $('.gnb > li').mouseleave(function(){
+        $('.gnb_sub').stop().hide()
+    })
+</script>
