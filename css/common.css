@@ -16,7 +16,7 @@ header, .MenuHeader{
     width: 100%;
     background: #fff;
     transition: all 0.2s ease;
-    z-index: 100;
+    z-index: 10000;
 }
 
 .header, .MenuHeader{
@@ -312,29 +312,14 @@ dd p{
 @media (max-width: 768px){
 /* HEADER */
 header, .MenuHeader{
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
     padding: 0 30px;
     min-width: 315px;
     padding-top: 10px;
-    /* width: 100%; */
-    /* background: #fff; */
-    /* transition: all 0.2s ease; */
-    /* z-index: 100; */
 }
 
 .header, .MenuHeader{
-    /* position: relative; */
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* margin: 0 auto; */
     padding: 0 0 10px 0;
-    /* max-width: 1600px; */
     height: 110px;
-    /* transition: all 0.2s ease; */
-    /* z-index: 999; */
 }
 
 .header.scroll{
@@ -366,25 +351,17 @@ header, .MenuHeader{
 .menuPop{
     display: none;
     background-color: #fff;
-    /* overflow: hidden; */
 }
 
 .menuList{
     position: initial;
     padding-top: 0px;
-    /* background-color: #fff; */
     width: 100%;
     height: 100%;
 }
 
 .ListGnb{
-    /* background-color: #fff; */
-    /* max-width: 1600px; */
-    /* margin: 0 auto; */
-    /* display: flex; */
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* width: 100%; */
 }
 
 .ListGnb > li{
@@ -423,9 +400,8 @@ header, .MenuHeader{
 
 /* FOOTER */
 footer{
-    display: none;
     position: relative;
-    padding: 105px 50px 55px;
+    padding: 40px 30px 30px;
     width: 100%;
     letter-spacing: 0;
     background: #222;
@@ -433,23 +409,29 @@ footer{
 }
 
 .footWrap{
-    max-width: 1600px;
+    max-width: 375px;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     position: relative;
 }
 
 .f_logo{
-    margin-bottom: 327px;
-    padding-right: 208px;
+    height: 50px;
+    margin-bottom: 30px;
+    padding-right: 0px;
+}
+
+.f_logo img{
+    width: 110px;
 }
 
 .f_sns{
-    position: absolute;
-    bottom: 0;
+    position: relative;
     left: 0;
     display: flex;
-    gap: 168px;
+    gap: 0px;
+    margin-bottom: 30px;
 }
 
 .sns{
@@ -458,7 +440,7 @@ footer{
 }
 
 .copy{
-    max-width: 1600px;
+    max-width: 375px;
     margin: 0 auto;
     padding-bottom: 60px;
     font-size: 15px;
@@ -467,19 +449,19 @@ footer{
 }
 
 .f_box{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    width: 1222px;
+    display: block;
+    width: 315px;
 }
 
 .f_menu{
-    position: relative;
-    width: 100%;
-    max-width: 840px;
+    max-width: 315px;
+    margin-bottom: 30px;
 }
+
+.f_menu li a{
+    padding: 5px 0;
+}
+
 
 .f_menu li a:hover{
     text-decoration: underline;
@@ -487,26 +469,26 @@ footer{
 }
 
 .f_menu > li{
-    position: relative;
-    float: left;
-    margin: 0 0 40px 0;
-    width: 25%;
+    float: none;
+    margin: 0;
+    width: auto;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .f_menu li a{
-    display: block;
-    margin-bottom: 30px;
-    font-size: 18px;
-    color: #fff;
-    line-height: 1;
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 40px;
+    font-weight: 600;
 }
 
 .f_menu li ul{
-    display: block !important;
+    display: none !important;
 }
 
 .f_menu li ul li {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 2;
     color: #a3a3a3;
 }
@@ -518,43 +500,45 @@ footer{
 }
 
 .f_menu > li:nth-child(4) {
-    position: absolute;
-    left: 50%;
-    top: 190px;
+    position: relative;
+    left: 0;
+    top: 0;
 }
 
 .f_menu > li:nth-child(5) {
-    margin-bottom: 90px;
+    margin-bottom: 0px;
 }
 
 .f_info{
     display: flex;
     flex-direction: column;
-    width: 270px;
-    font-size: 15px;
+    width: 315px;
+    font-size: 14px;
     color: #fff;
     float: right;
 }
 
 dt{
-    font-size: 18px;
-    margin-bottom: 18px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+dd {
+    color: #a3a3a3;
 }
 
 dd p{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
 }
 
 .adr{
-    margin-bottom: 40px;
-}
-
-.num{
-    display: flex;
+    margin-bottom: 25px;
 }
 
 .name{
+    font-size: 14px;
     margin-right: 11px;
     width: 76px;
 }
